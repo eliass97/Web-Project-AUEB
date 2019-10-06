@@ -1,0 +1,29 @@
+#text {
+	height: 450px;
+	width: 80%; 
+	background-color: yellow;
+	overflow: auto;
+	padding: 10px;
+	border: dashed;
+	border-color: orange;
+	border-width: 5px;
+}
+
+img {
+	width: 80%;
+	height: 40%;
+	border: solid;
+	border-style: inset;
+	border-color: orange;
+	border-width: 5px;
+}
+
+#all {
+	margin: auto;
+	border-style: solid;
+	border-color: #b30000;
+	height: 100%;
+	width: 35%;
+	padding: 10px;
+	background-color: #fff7e6;
+}

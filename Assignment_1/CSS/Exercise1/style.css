@@ -1,0 +1,57 @@
+body {
+  font-family: Arial;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+thead {
+	font-weight: bold;
+}
+
+#emblem {
+	width: 400px;
+	height: 100px;
+}
+
+.darkgreentext {
+	color: #006600;
+}
+
+.darkyellowtext {
+	color: #ffcc00;
+}
+
+.lightyellowtext {
+	color: #ffcc66;
+}
+
+.greytext {
+	color: #c2c2a3;
+}
+
+.redtext {
+	color: #b30000;
+}
+
+.lightgreentext {
+	color: #ace600;
+}
+
+label.lightgreentext {
+	line-height: 150%;
+}
+
+.yellowbullets {
+	color: #e6e600;
+}
+
+.blueinput {
+	color: #0033cc;
+}
+
+#twitter {
+	color: #66e0ff;
+}

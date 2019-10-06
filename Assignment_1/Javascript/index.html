@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Galini Hotel</title>
+		<script language="javascript">
+		
+		function add(a,b) {
+			//document.write("Add function: ", a+b);
+			return a+b;
+		}
+		
+		function subtract(a,b) {
+			//document.write("Subtract function: ", a-b);
+			return a-b;
+		}
+		
+		function multiply(a,b) {
+			//document.write("Multiply function: ", a*b);
+			return a*b;
+		}
+		
+		function divide(a,b) {
+			if(b != 0) {
+				//document.write("Divide function: ", a/b);
+				return a/b;
+			}
+			//document.write("Divide function: null");
+			return null;
+		}
+		
+		</script> 
+	</head>
+	<body>
+		<button onclick="Insert()">Insert Person</button><br><br>
+		<button onclick="Print()">Calculate Total</button>
+		<p id="par"></p>
+		<script>
+			
+			var price;
+			var age;
+			
+			var updateTotalAmount = (function () {
+				var counter = 0;
+				return function () {counter += price; return counter}
+			})();
+			
+			var updateClickCount = (function () {
+				var counter = 0;
+				return function () {counter += 1; return counter}
+			})();
+			
+			function Insert() {
+				price = window.prompt('Enter price of the holiday in EUROS', ''); 
+				price = parseFloat(price);
+				age = window.prompt('Enter your age', ''); 
+				age = parseInt(age);
+				
+				if(price == null || age == null) {
+					alert("No price or age was entered!");
+				} else {
+					if(age < 5) {
+						price = multiply(price, 0);
+						alert("The holiday will be free.");
+					} else if(age <= 15) {
+						price = divide(price, 2);
+						alert("The price of the holiday will be half the advertised price.");
+					} else {
+						price = multiply(price, 1.15);
+						alert("The price of the holiday will be " + price.toFixed(2) + " euros.");
+					}
+					
+					totalAmount = updateTotalAmount();
+					totalClicks = updateClickCount();
+				}
+			}
+			
+			function Print() {
+				document.getElementById("par").innerHTML = ("Total Amount: " + totalAmount.toFixed(2) + "<br>Total Clicks: " + totalClicks + "<br>");
+			}
+			
+		</script>
+	</body>
+</html>
