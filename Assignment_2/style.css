@@ -1,0 +1,50 @@
+body {
+    background-image: url("main_background.jpg");
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#test {
+	background-color: white;
+}
+
+#search_bar {
+	padding: 5px;
+	font-size: 20px;
+	width: 40vw;
+	display: block;
+	margin: auto;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.movie_divs {
+	background-image: url("movie_background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #ebebe0;
+	padding: 5px;
+	display: block;
+	margin: auto;
+	width: 50vw;
+	border: 3px solid black;
+	text-align: center;
+}
+
+.info_labels {
+	font-size: 120%;
+}
+
+.more_buttons {
+	color: #0099ff;
+}
+
+.less_buttons {
+	color: #0099ff;
+	display: none;
+}
